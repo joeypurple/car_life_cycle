@@ -25,7 +25,7 @@ def calc_years(start_date):
 
 # ===== 通用绘图函数 =====
 def plot_brand(ax, data, brand_name):
-    category_order = ["Sedan", "SUV", "EV"]
+    category_order = ["Sedan", "SUV", "EV Sedan", "EV SUV"]
     plot_data = []
     for cat in category_order:
         if cat in data:
@@ -107,10 +107,14 @@ mercedes = {
         "GLE": "2019-03",
         "GLS": "2019-04"
     },
-    "EV": {
+    "EV Sedan": {
         "EQE": "2021-09",
-        "EQS": "2021-04",
-        "EQC": "2019-05"
+        "EQS": "2021-04"
+    },
+    "EV SUV": {
+        "EQC": "2019-05",
+        "EQA": "2021-10",
+        "EQB": "2022-03"
     }
 }
 
@@ -129,9 +133,15 @@ audi = {
         "Q7": "2015-06",
         "Q8": "2018-06"
     },
-    "EV": {
+    "EV Sedan": {
+        "e-tron GT": "2021-02",
+        "A6 e-tron": "2024-01"
+    },
+    "EV SUV": {
         "Q4 e-tron": "2021-04",
-        "Q8 e-tron": "2019-03"
+        "Q8 e-tron": "2019-03",
+        "Q6 e-tron": "2023-10",
+        "Q5 e-tron": "2022-09"
     }
 }
 
@@ -149,10 +159,15 @@ bmw = {
         "X5": "2018-06",
         "X7": "2019-03"
     },
-    "EV": {
-        "iX3": "2020-07",
+    "EV Sedan": {
         "i4": "2021-06",
-        "iX": "2021-11"
+        "i7": "2022-04"
+    },
+    "EV SUV": {
+        "iX3": "2020-07",
+        "iX": "2021-11",
+        "iX1": "2022-11",
+        "iX2": "2023-11"
     }
 }
 
