@@ -80,7 +80,7 @@ def plot_brand(ax, data, brand_name):
 
     # 类别标签
     for cat, pos in category_positions.items():
-        ax.text(-0.5, pos, cat, ha='right', va='center', fontsize=10, fontweight='bold')
+        ax.text(-1.2, pos, cat, ha='right', va='center', fontsize=9, fontweight='bold')
 
     ax.invert_yaxis()
 
@@ -114,7 +114,8 @@ mercedes = {
     "EV SUV": {
         "EQC": "2019-05",
         "EQA": "2021-10",
-        "EQB": "2022-03"
+        "EQB": "2022-03",
+        "EQV": "2022-06"
     }
 }
 
@@ -141,7 +142,8 @@ audi = {
         "Q4 e-tron": "2021-04",
         "Q8 e-tron": "2019-03",
         "Q6 e-tron": "2023-10",
-        "Q5 e-tron": "2022-09"
+        "Q5 e-tron": "2022-09",
+        "e-tron Sportback": "2020-09"
     }
 }
 
@@ -161,13 +163,15 @@ bmw = {
     },
     "EV Sedan": {
         "i4": "2021-06",
-        "i7": "2022-04"
+        "i7": "2022-04",
+        "i5": "2023-10"
     },
     "EV SUV": {
         "iX3": "2020-07",
         "iX": "2021-11",
         "iX1": "2022-11",
-        "iX2": "2023-11"
+        "iX2": "2023-11",
+        "iX M60": "2022-11"
     }
 }
 
